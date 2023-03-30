@@ -1,0 +1,17 @@
+.modal {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  &__item {
+    display: flex;
+  }
+  &__btn {
+    border-radius: 3rem;
+    background-color: $bg;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}

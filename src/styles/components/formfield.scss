@@ -1,0 +1,17 @@
+.formfield {
+  display: flex;
+  direction: column;
+  &__item {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  &__btn {
+    border-radius: 3rem;
+    background-color: $bg;
+    border: none;
+    font-size: 1.5rem;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}
