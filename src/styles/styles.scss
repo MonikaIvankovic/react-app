@@ -1,6 +1,6 @@
 //base
-@import "./base/base.scss";
 @import "./base/vars.scss";
+@import "./base/base.scss";
 
 //components
 @import "./components/container.scss";
@@ -11,3 +11,5 @@
 @import "./components/pagination.scss";
 @import "./components/tags.scss";
 @import "./components/modal.scss";
+@import "./components/box.scss";
+@import "./components/flex.scss";

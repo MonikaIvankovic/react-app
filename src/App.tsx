@@ -7,6 +7,8 @@ import Formfield from "./components/formfield";
 import Pagination from "./components/pagination";
 import Tags from "./components/tags";
 import Modal from "./components/modal";
+import TransformExe from "./components/transform-exe";
+import FlexExe from "./components/flex-exe";
 
 const App = () => {
   return (
@@ -19,6 +21,9 @@ const App = () => {
       <Tags />
       <Pagination />
       <Modal />
+      <h2>Transform property exercise</h2>
+      <TransformExe />
+      <FlexExe />
     </div>
   );
 };
