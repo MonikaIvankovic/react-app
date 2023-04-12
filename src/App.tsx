@@ -10,6 +10,7 @@ import Modal from "./components/modal";
 import TransformExe from "./components/transform-exe";
 import FlexExe from "./components/flex-exe";
 import Input from "./components/input";
+import Card from "./components/card";
 
 const App = () => {
   return (
@@ -28,6 +29,12 @@ const App = () => {
       <h2>Transform property exercise</h2>
       <TransformExe />
       <FlexExe />
+      <div className="card__wrapper">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 };

@@ -36,9 +36,7 @@ const FlexExe = () => {
       <div className="flex">
         <div className="flex--one">
           <h1>Title</h1>
-          <span className="flex--one__item">
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          </span>
+          <span className="flex--one__item">lorem ipsum lorem ipsum</span>
           <button>Text</button>
         </div>
         <div className="flex--two">
