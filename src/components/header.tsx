@@ -10,17 +10,17 @@ const Header = () => {
         </div>
         <div className="header__actions">
           <nav className="header__navigation">
-            <a className="header__navigation__item" href="">
+            <a className="header__navigation__item" href="/">
               Home
             </a>
-            <a className="header__navigation__item" href="">
-              About us
-            </a>
-            <a className="header__navigation__item" href="">
-              Activities
-            </a>
-            <a className="header__navigation__item" href="">
+            <a className="header__navigation__item" href="/exe">
               Excercises
+            </a>
+            <a className="header__navigation__item" href="/ispit">
+              CSS Ispit
+            </a>
+            <a className="header__navigation__item" href="/mlinar">
+              Mlinar
             </a>
           </nav>
           <div className="header__navigation">MI</div>

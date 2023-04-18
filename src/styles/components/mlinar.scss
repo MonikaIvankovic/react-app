@@ -1,0 +1,59 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.mlinar {
+  margin-left: 14rem;
+  margin-right: 14rem;
+  background-color: $bgmlinar;
+  width: 90rem;
+}
+.headerml {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $mlinartext;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+
+  &__actions {
+    text-decoration: none;
+    color: $mlinartext;
+    margin-left: 1.5rem;
+  }
+  &--left {
+    display: flex;
+    align-items: center;
+  }
+}
+.section {
+  margin-left: 13rem;
+  &__title {
+    color: $mlinartext;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    justify-content: space-around;
+    margin-left: 13rem;
+    margin-top: 7rem;
+    font-size: 3.5rem;
+    div {
+      margin-bottom: 2rem;
+    }
+    &--yellow {
+      color: $mlinarsectext;
+    }
+  }
+}
+.main {
+  &__tags {
+    color: $mlinartext;
+    display: inline-block;
+    border-radius: 1.125rem;
+    background-color: #1d1f20;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    margin-right: 2rem;
+  }
+}

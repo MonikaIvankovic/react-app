@@ -1,0 +1,48 @@
+@keyframes new-item-animation {
+  from {
+    transform: translateY(-130%);
+  }
+
+  to {
+    transform: translateY(120%);
+  }
+}
+
+.css {
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__box {
+    opacity: 0.8;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+    cursor: pointer;
+
+    &--one {
+      background-color: $black;
+      animation: new-item-animation 2s linear;
+      animation-fill-mode: forwards;
+    }
+    &--two {
+      background-color: $red;
+      animation: new-item-animation 2s linear;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+    }
+    &--three {
+      background-color: $orange;
+      animation: new-item-animation 2s linear;
+      animation-delay: 4s;
+      animation-fill-mode: forwards;
+    }
+  }
+  &__letter {
+    font-size: 8rem;
+    color: $white;
+  }
+}
