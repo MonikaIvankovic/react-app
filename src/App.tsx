@@ -8,6 +8,7 @@ import Mlinar from "./pages/mlinar";
 import Varijable from "./pages/varijable";
 import Petlje from "./pages/petlje";
 import Vjezba2604 from "./pages/vjezba2604";
+import Vjezba2804 from "./pages/vjezba2804";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const App = () => {
     {
       path: "/vjezba2604",
       element: <Vjezba2604 />,
+    },
+    {
+      path: "/vjezba2804",
+      element: <Vjezba2804 />,
     },
   ]);
   return (

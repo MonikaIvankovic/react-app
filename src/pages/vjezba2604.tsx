@@ -50,16 +50,16 @@ const Vjezba2604 = () => {
 
   //Zadatak
 
-  const brojevi = [1, 5, 25, 3, 6, 8, 7, 36, 95, 8, 47];
-  let maxNumber: number = brojevi[0];
+  //const brojevi = [1, 5, 25, 3, 6, 8, 7, 36, 95, 8, 47];
+  //let maxNumber: number = brojevi[0];
 
-  const greatestNumber = () => {
-    for (let i = 0; i < brojevi.length; i++) {
-      if (brojevi[i] > maxNumber) {
-        maxNumber[i];
-      }
-    }
-  };
+  //const greatestNumber = () => {
+  //  for (let i = 0; i < brojevi.length; i++) {
+  //   if (brojevi[i] > maxNumber) {
+  //    maxNumber[i];
+  //  }
+  // }
+  //};
 
   return (
     <div className="container">
