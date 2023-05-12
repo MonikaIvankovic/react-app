@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 type CountryNameType = {
   common: string;
   official: string;
@@ -14,77 +14,79 @@ type FlagsType = {
   png: string;
   svg: string;
 };
-type CountryType = {
+export type CountryType = {
   name: CountryNameType;
   flags: FlagsType;
   currencies: CurrenciesType;
   capital: string[];
+  area: number;
 };
 
 const Europe = () => {
-  const [data, setData] = useState<CountryType>();
-  const [countries, setCountries] = useState<CountryType[]>([]);
-  const [flags, setFlags] = useState<FlagsType[]>([]);
-  const [currencies, setCurrencies] = useState<CurrenciesType[]>([]);
-  const [name, setCountriesNames] = useState<CountryNameType[]>([]);
+  const [europeData, setEuropeData] = useState<CountryType[]>([]);
 
-  const getEuropeCountries = () => {
-    fetch(`https://restcountries.com/v3.1/region/europe`)
-      .then((response) => {
-        return response.json();
-      })
+  const getEuropeData = () => {
+    //uzimanje posataka sa servera
+    fetch("https://restcountries.com/v3.1/region/europe")
+      .then((res) => res.json())
       .then((data) => {
+        //ispisivanje posataka u konzolu
         console.log(data);
+        setEuropeData(data);
       })
-      .catch((error) => console.error(error));
-  };
-  const getEuropeCountriesName = () => {
-    fetch(`https://restcountries.com/v3.1/name/{name}?fullText=true`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setCountries(data);
-      })
-      .catch((error) => console.error(error));
+      //ispisivanje errora u slucaju da nesto ne valja
+      .catch((err) => console.log(err));
   };
 
   useEffect(() => {
-    getEuropeCountries();
-    getEuropeCountriesName();
+    getEuropeData();
   }, []);
+
   return (
     <div className="container">
-      {" "}
-      {countries.length > 0 && (
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Flag</th>
-              <th>Currency</th>
-              <th>Capital</th>
-            </tr>
-          </thead>
-          <tbody>
-            {countries.map((countries: CountryType) => {
-              return (
-                <tr>
-                  <td>{countries.name}</td>
-                  <td>{countries.flags}</td>
-                  <td>{countries.currencies}</td>
-                  <td>{countries.capital}</td>
-                </tr>
-              );
-            })}
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      )}
+      <h1>Europe</h1>
+      <input type="text" />
+      <table className="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Flag</th>
+            <th>Currency</th>
+            <th>Capital</th>
+          </tr>
+        </thead>
+        <tbody>
+          {europeData.map((country: CountryType) => {
+            return (
+              <tr key={country.area}>
+                <td>
+                  <a href={`/europe/${country.capital[0].toLocaleLowerCase()}`}>
+                    {country.name.official}
+                  </a>
+                </td>
+                <td>
+                  <img
+                    src={country.flags.png}
+                    className="table__flag"
+                    alt={`${country.name.official} flag`}
+                  />
+                </td>
+                <td>
+                  {Object.keys(country.currencies).map((key) => {
+                    return (
+                      <React.Fragment key={key}>
+                        <span>{country.currencies[key].name}</span>,{" "}
+                        <span>{country.currencies[key].symbol}</span>
+                      </React.Fragment>
+                    );
+                  })}
+                </td>
+                <td>{country.capital.map((capital) => capital)}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </div>
   );
 };

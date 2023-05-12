@@ -20,6 +20,9 @@ const Home = () => {
       <a className="header__navigation__item" href="/europe">
         Europe
       </a>
+      <a className="header__navigation__item" href="/africa">
+        Africa
+      </a>
     </>
   );
 };
