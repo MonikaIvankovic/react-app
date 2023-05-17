@@ -1,0 +1,36 @@
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__button {
+    background-color: $pink;
+    font-size: 1.3rem;
+  }
+  &__input {
+    font-size: 1.3rem;
+    border-radius: 2px;
+    border: solid 1.5px #d3d3d3;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+input[type="text"]:hover {
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+  outline-width: 0px;
+}
+.trash-icon {
+  width: 2rem;
+  :hover {
+    color: red;
+  }
+}

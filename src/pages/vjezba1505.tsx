@@ -75,7 +75,7 @@ const Vjezba1505 = () => {
     } else {
       let sequence = [1, 1];
       for (let i = 3; i <= n; i++) {
-        sequence.push(sequence[i] + sequence[i + (i - 1)]);
+        sequence.push(sequence[i - 2] + sequence[i - 1]);
       }
       return sequence;
     }
@@ -99,7 +99,7 @@ const Vjezba1505 = () => {
     console.log(getFullName(user));
     console.log(reverseString("Monika"));
     console.log(isPalindrome("ana"));
-    console.log(fibonacciSequence(12));
+    console.log(fibonacciSequence(5));
     console.log(filterEvenNumbers([1, 2, 6, 7, 8, 10, 11]));
   }, []);
   return <div className="container"></div>;

@@ -26,6 +26,9 @@ const Home = () => {
       <a className="header__navigation__item" href="/vjezba1505">
         Vjezba 1505
       </a>
+      <a className="header__navigation__item" href="/todo">
+        To do lista
+      </a>
     </>
   );
 };
