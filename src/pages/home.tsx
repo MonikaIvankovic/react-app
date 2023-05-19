@@ -29,6 +29,9 @@ const Home = () => {
       <a className="header__navigation__item" href="/todo">
         To do lista
       </a>
+      <a className="header__navigation__item" href="/java">
+        Parcijalni ispit Java
+      </a>
     </>
   );
 };
