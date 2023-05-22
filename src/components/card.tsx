@@ -28,7 +28,7 @@ const Card = () => {
           <h1>1000</h1>
         </div>
         <div>
-          <h3>Game entries</h3>
+          <h3>Gaame entries</h3>
           <h1>14522</h1>
         </div>
         <div>
