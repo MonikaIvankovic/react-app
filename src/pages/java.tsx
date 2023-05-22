@@ -10,7 +10,8 @@ export type MusicType = {
 const Java = () => {
   const [searchData, setSearchData] = useState<MusicType[]>([]);
   const [searchValue, setSearchValue] = useState<string>("");
-
+  const test = 2;
+  const test2 = 3;
   //uzimanje podataka sa servera
 
   const handleSearch = (searchValue: string) => {

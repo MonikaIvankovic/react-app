@@ -26,7 +26,7 @@ const Header = () => {
               Varijable
             </a>
             <a className="header__navigation__item" href="/petlje">
-              Petlje
+              Petljee
             </a>
           </nav>
           <div className="header__navigation">MI</div>
