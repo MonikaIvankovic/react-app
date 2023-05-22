@@ -29,7 +29,7 @@ const Card = () => {
         </div>
         <div>
           <h3>Game entries</h3>
-          <h1>1452</h1>
+          <h1>14522</h1>
         </div>
         <div>
           <h3>Reminder</h3>
