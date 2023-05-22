@@ -18,7 +18,7 @@ const Card = () => {
 
         <div className="card__main__icon">
           <div>14</div>
-          <div>Daysy</div>
+          <div>Daysys</div>
         </div>
       </div>
       <hr />
