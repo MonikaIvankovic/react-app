@@ -25,7 +25,7 @@ const Card = () => {
       <div className="card__footer">
         <div>
           <h3>Game points</h3>
-          <h1>1000</h1>
+          <h1>10000</h1>
         </div>
         <div>
           <h3>Game entries</h3>
