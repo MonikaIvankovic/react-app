@@ -24,7 +24,7 @@ const Card = () => {
       <hr />
       <div className="card__footer">
         <div>
-          <h3>Game points</h3>
+          <h3>Game ptoints</h3>
           <h1>1000</h1>
         </div>
         <div>
