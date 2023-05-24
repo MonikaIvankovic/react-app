@@ -1,0 +1,24 @@
+.cardroller {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+
+  &__image {
+    width: 10rem;
+    margin-bottom: 0;
+  }
+  &__item {
+    border: 0.3rem solid $gray;
+    border-radius: 0.3rem;
+    background-color: $white;
+  }
+  &--name {
+    margin: 1rem;
+  }
+}
+.data {
+  margin-top: 2rem;
+  border: 0.3rem solid $gray;
+  border-radius: 0.3rem;
+  text-align: center;
+}

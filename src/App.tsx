@@ -17,6 +17,7 @@ import Africa from "./pages/africa";
 import Vjezba1505 from "./pages/vjezba1505";
 import Todo from "./pages/todo";
 import Java from "./pages/java";
+import Vjezba2405 from "./pages/vjezba2405";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -83,6 +84,10 @@ const App = () => {
     {
       path: "/java",
       element: <Java />,
+    },
+    {
+      path: "/vjezba2405",
+      element: <Vjezba2405 />,
     },
   ]);
   return (
