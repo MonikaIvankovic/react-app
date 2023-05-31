@@ -35,6 +35,9 @@ const Home = () => {
       <a className="header__navigation__item" href="/vjezba2405">
         Vjezba 2405
       </a>
+      <a className="header__navigation__item" href="/bootstrap">
+        Bootstrap
+      </a>
     </>
   );
 };

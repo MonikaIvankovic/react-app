@@ -18,6 +18,7 @@ import Vjezba1505 from "./pages/vjezba1505";
 import Todo from "./pages/todo";
 import Java from "./pages/java";
 import Vjezba2405 from "./pages/vjezba2405";
+import Bootstrap from "./pages/bootstrap";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -88,6 +89,10 @@ const App = () => {
     {
       path: "/vjezba2405",
       element: <Vjezba2405 />,
+    },
+    {
+      path: "/bootstrap",
+      element: <Bootstrap />,
     },
   ]);
   return (

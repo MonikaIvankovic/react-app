@@ -15,6 +15,13 @@
   &--name {
     margin: 1rem;
   }
+  &__button {
+    background-color: $gray;
+    width: 5rem;
+
+    align-items: center;
+    justify-content: center;
+  }
 }
 .data {
   margin-top: 2rem;

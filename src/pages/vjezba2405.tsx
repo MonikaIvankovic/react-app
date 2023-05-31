@@ -60,14 +60,22 @@ const Vjezba2405 = () => {
           return (
             <div className="cardroller__item">
               <div className="cardroller--name">{roller.name}</div>
-              <div onClick={() => getActiveRoller(roller.id)}>
+              <div>
                 <img
+                  onClick={() => getActiveRoller(roller.id)}
                   className="cardroller__image"
                   src={roller.img}
                   alt="roller image"
                 />
+                <button
+                  className="cardroller__button"
+                  onClick={() => getActiveRoller(roller.id)}
+                >
+                  Show data
+                </button>
+
+                <div>{activeRoller.about}</div>
               </div>
-              <div></div>
             </div>
           );
         })}
