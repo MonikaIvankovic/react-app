@@ -44,3 +44,31 @@ span {
     }
   }
 }
+.game {
+  &--one {
+    &__player {
+      margin-bottom: -1.3rem;
+    }
+    &__grass {
+      margin-bottom: 3.8rem;
+    }
+    &__finish1 {
+      position: absolute;
+      margin-top: -13rem;
+      margin-left: 55rem;
+    }
+    &__finish2 {
+      position: absolute;
+      margin-top: -13rem;
+      margin-left: 55.2rem;
+    }
+  }
+  &--two {
+    &__player {
+      margin-bottom: -1.3rem;
+    }
+    &__grass {
+      margin-bottom: 3rem;
+    }
+  }
+}
