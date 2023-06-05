@@ -19,6 +19,7 @@ import Todo from "./pages/todo";
 import Java from "./pages/java";
 import Vjezba2405 from "./pages/vjezba2405";
 import Bootstrap from "./pages/bootstrap";
+import Instagram from "./pages/Instagram/instagram";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -93,6 +94,10 @@ const App = () => {
     {
       path: "/bootstrap",
       element: <Bootstrap />,
+    },
+    {
+      path: "/instagram",
+      element: <Instagram />,
     },
   ]);
   return (

@@ -38,6 +38,9 @@ const Home = () => {
       <a className="header__navigation__item" href="/bootstrap">
         Bootstrap
       </a>
+      <a className="header__navigation__item" href="/instagram">
+        Instagram
+      </a>
     </>
   );
 };

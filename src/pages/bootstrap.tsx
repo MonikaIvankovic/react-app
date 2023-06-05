@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
-import ProgressBar from "react-bootstrap/ProgressBar";
-import Table from "react-bootstrap/Table";
+//import Button from "react-bootstrap/Button";
+//import Tab from "react-bootstrap/Tab";
+//import Tabs from "react-bootstrap/Tabs";
+//import ProgressBar from "react-bootstrap/ProgressBar";
+//import Table from "react-bootstrap/Table";
 import Player1 from "../assets/player1";
 import Player2 from "../assets/player2";
 import Grass from "../assets/grass";
@@ -48,8 +48,8 @@ const Bootstrap = () => {
   };
 
   const handleClick = () => setLoading(true);
-  return (
-    <div className="container">
+  return {
+    /*  <div className="container">
       <div className="bootstrap__header">
         <h1>Bootstrap Hello!</h1>
         <Button
@@ -80,7 +80,7 @@ const Bootstrap = () => {
                   </div>
                 </div>
                 <div className="dashboard__progressbar">
-                  <ProgressBar now={60} />
+                 <ProgressBar now={60} /> 
                 </div>
               </div>
               <div className="bootstrap__dashboard__card"></div>
@@ -146,8 +146,8 @@ const Bootstrap = () => {
           </Tab>
         </Tabs>
       </div>
-    </div>
-  );
+    </div>*/
+  };
 };
 
 export default Bootstrap;
